@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ethon (0.7.0)
+      ffi (>= 1.3.0)
+    ffi (1.9.3-x86-mingw32)
+    mixpanel_client (4.0.1)
+      typhoeus (~> 0.6.7)
+    typhoeus (0.6.8)
+      ethon (>= 0.7.0)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  mixpanel_client (= 4.0.1)
