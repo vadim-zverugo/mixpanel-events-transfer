@@ -1,1 +1,1 @@
-ruby exporter.rb
+ruby main.rb
