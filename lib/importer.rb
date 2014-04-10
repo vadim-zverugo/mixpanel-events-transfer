@@ -27,10 +27,8 @@ class Importer
 
     @client.run_parallel_requests
 
-    imported_n = 0
-    requests.each do |request|
-      imported_n += 1 if request.response.handled_response == [1]
-    end
-    puts "#{imported_n} from #{events.size} event(s) have been imported"
+    imported = 0
+    requests.each { |request| imported += 1 if request.response.handled_response == [1] }
+    puts "#{imported} from #{events.size} event(s) have been imported"
   end
 end
